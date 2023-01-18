@@ -1,10 +1,18 @@
 import React from "react";
-import ReactDOM  from "react-dom/client";
+import ReactDOM from "react-dom/client";
+import { Greeting, UserCard } from "./Greeting";
+import Product, { Navbar } from "./Product"
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-function Grettings(){
-    return <h1>Hola Mundo</h1>
-}
-
-root.render(Grettings())
+root.render(
+    <>
+    <Greeting/>
+    <Greeting/>
+    <Greeting/>
+    <UserCard/>
+    <Product/>
+    <Product/>
+    <Navbar/>
+    </>
+)
